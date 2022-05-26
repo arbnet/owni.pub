@@ -1,0 +1,40 @@
+/*body {
+	display: flex;
+	justify-content: space-between;
+}
+
+main {
+  order: 2;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+aside {min-width: var(--aside)}
+header {
+  z-index: 2;
+  height: var(--header);
+}
+footer {
+  z-index: 0;
+  height: var(--footer);
+}
+
+
+*/
+
+aside, body[data-trait~="aside-right"] aside.adapt {order: 1}
+body[data-trait~="aside-right"] aside {order: 3}
+body main[data-trait~="footer-fixed"] section {
+  margin-bottom: calc(var(--footer) - 1px)
+}
+
+section {
+	z-index: 1;
+	flex-grow: 1;
+}
+body main[data-trait~="footer-front"] footer {z-index: 3}
+body main[data-trait~="footer-fixed"] footer {
+  bottom: 0;
+  width: inherit;
+  position: fixed;
+}

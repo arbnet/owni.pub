@@ -1,0 +1,19 @@
+<OWNI>
+  <style css="values,colors,hull,flex,align"/>
+  <answer frame.="site"><title _var="title"/>
+    <body_body class="hull center flex flex-between-h flex-p-column[bclass]">
+      <_input id="l-view" hidden="" type="checkbox"/>
+      <_aside class="flex-p-g2">
+        [sidebar]
+      </_aside>
+      <_main class="hull flex flex-column flex-g1 flex-o2 i-hide[mclass]">
+        <_header _xml="header" class="z2"/>
+        <_section id="content">
+          [content]
+        </_section>
+        <_footer _xml="footer"/>
+      </_main>
+    </body_body>
+  </answer>
+  <labels>bclass,mclass</labels>
+</OWNI>

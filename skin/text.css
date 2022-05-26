@@ -1,0 +1,390 @@
+h6 {margin: 0}
+bdi {
+  font-family: 'Badge';
+  background-color: inherit;
+}
+span {display:inline-block}
+.text-left {text-align:left}
+.text-right {text-align:right}
+.text-center {text-align:center}
+.text-justify {text-align:justify}
+.text-break {
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+}
+/* Заголовки */
+h1 {font-size: 1.9em}
+h2 {font-size: 1.7em}
+h3 {font-size: 1.5em}
+h4 {font-size: 1.3em}
+h5 {font-size: 1.1em}
+h6 {font-size: 0.9em}
+h1,h4 {text-align: center}
+h3 {text-align: right}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0.05em;
+  background-color: inherit;
+}
+h3,h4,h5 {margin-top: 1em}
+h2:not(:first-of-type) {margin-top: 2em}
+h1.caps,h2.caps,h3.caps,h4.caps,h5.caps,h6.caps {
+  font-variant: small-caps;
+}
+h1.count{counter-reset: h2}
+h2.count:before {
+  font-size: 0.7em;
+  counter-increment: h2;
+  content: counter(h2)". "
+}
+h2.count {counter-reset: h3}
+h3.count:before {
+  font-size: 0.7em;
+  counter-increment: h3;
+  content: counter(h2)"."counter(h3)". "
+}
+/* Абзац */
+p {
+  text-indent: 20px;
+  margin: 15px 10px;
+  text-align: justify;
+}
+p.letter::first-letter {
+  line-height: 1em;
+  font-weight: bold;
+  color: var(--inka);
+  font-family: 'BadScript';
+  text-transform: uppercase;
+}
+/* Цитата */
+blockquote {
+  margin: 1em calc(2em + 3px);
+  color: var(--inkq);
+  font-size: 0.9rem;
+  position: relative;
+  font-style: italic; 
+  text-align: justify;
+  border-left: 6px solid;
+  background-color: var(--dyeq);
+  padding: 0.5em;
+}
+cite {
+  clear: both;
+  display: block;
+}
+cite::before {
+  content: '\22  ';
+  font-family: 'Badge';
+}
+cite::after {
+  content: '\27';
+  font-family: 'Badge';
+}
+/* blockquote cite {
+    right: 10px;
+    bottom: 5px;
+    position: absolute;
+}*/
+blockquote * {
+  background-color: inherit;
+}
+a.source {
+  display: block;
+  text-align: right;
+}
+a.source::before {
+  content: 'Источник: ';
+} 
+/* Списки */
+dl,ol,ul {margin: 0 auto}
+li {
+  text-align: left;
+  position: relative;
+}
+ul {
+  padding-inline-start: 1.3em;
+}
+ul:empty {
+  min-height: 1em;
+  border: var(--brd) dotted;
+}
+/* 
+dd,li {text-align: justify} */
+ul.inside,ol.inside {list-style-position: inside}
+ul.inline,ol.inline {vertical-align: text-top}
+ul[type="none"], ul[type="dash"], ul li[data-sign], ol li[data-sign] {list-style: none;}
+ul[type="image"] li {
+  margin-left: 0.2em;
+  margin-bottom: 0.2em;
+}
+ul[type="image"] li{list-style-image: var(--sign);}
+ul[type="dash"] {padding-left: 0.5em}
+ul[type="dash"] li {margin-left: 1em}
+ul[type="dash"] > li:not([data-sign]):before{
+  content: "";
+  top: 0.5em;
+  left: -1.4em;
+  width: 1.3em;
+  height: 0.2em;
+  position: absolute;
+  background-color: var(--inka);
+}
+ol {
+  padding-inline-start: 2.7em;
+}
+ul li[data-sign]:before,
+ol li[data-sign]:before {
+  content: attr(data-sign);
+  position: absolute;
+  top: -0.2em;
+  left: -1.3em;
+}
+ol[type="0"] {list-style-type: decimal-leading-zero}
+ol.stylized {
+  --size: 35;
+  list-style: none;
+  counter-reset: cnt;
+  position: relative;
+}
+ol.stylized.circle li:before {
+  border-radius: 50%;
+}
+ol.stylized.stepwise:before {
+	content: ''; 
+	top: 0;
+	bottom: 0;
+  width: 3px;
+  position: absolute;
+  background-color: var(--inkc);
+  left: calc(var(--size) * 0.5px + 2px);
+}
+ol.stylized.stepwise li:last-child:after {
+	content: '';
+  bottom: 0;
+  width: 5px;
+  position: absolute;
+  display: inline-block;
+  top: calc(var(--size) * 1px);
+  background-color: var(--dyem);
+  left: calc((var(--size) + 17) * -0.5px);
+}
+ol.stylized li {
+  padding: 0.2em;
+  position: relative;
+  color: var(--inkm);
+  margin-bottom: 0.8em;
+  background-color: var(--dyea);
+  min-height: calc(var(--size) * 1px);
+  margin-left: calc(var(--size) * 1px - 30px);
+}
+ol.stylized li[data-sign]:before{
+  content: attr(data-sign);
+}
+ol.stylized li:not([data-sign]):before{
+  content: counter(cnt);
+  counter-increment: cnt;
+}
+ol.stylized li:before {
+  top: 0;
+  font-weight: bold;
+  text-align: center;
+  color: var(--inkh);
+  position: absolute;
+  display: inline-block;
+  background-color: var(--dyeh);
+  width: calc(var(--size) * 1px);
+  height: calc(var(--size) * 1px);
+  font-size: calc(var(--size) * 1px);
+  left: calc((var(--size) + 7) * -1px);
+  line-height: calc(var(--size) * 1px);
+}
+dl.stylized {--shift:5}
+dt {font-weight: bold}
+dl.stylized dd {
+  margin-top: -1.15em;
+  margin-left: calc(1em * var(--shift));
+}
+dl.stylized dd:before {
+  content: "— ";
+}
+/*
+.fluid-font-size {
+  font-size: calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 16px);
+}
+Теперь при ширине экрана меньше 480px шрифт всегда будет 16px, после 480 он станет резиновым, а после 1280px всегда будет 24px.
+*/
+.font01 {font-size: 0.1em}
+.font02 {font-size: 0.2em}
+.font03 {font-size: 0.3em}
+.font04 {font-size: 0.4em}
+.font05 {font-size: 0.5em}
+.font06 {font-size: 0.6em}
+.font07 {font-size: 0.7em}
+.font08 {font-size: 0.8em}
+.font09 {font-size: 0.9em}
+.font11 {font-size: 1.1em}
+.font12 {font-size: 1.2em}
+.font13 {font-size: 1.3em}
+.font14 {font-size: 1.4em}
+.font15 {font-size: 1.5em}
+.font16 {font-size: 1.6em}
+.font17 {font-size: 1.7em}
+.font18 {font-size: 1.8em}
+.font19 {font-size: 1.9em}
+pre.shift {
+  tab-size: 1em;
+  font-family: inherit;    
+  display: inline-block;
+}
+pre.tab {
+  margin: 0;
+  tab-size: 1em;
+  font-family: inherit;    
+  display: inline-block;
+}
+p[data-speech] {
+  position: relative;
+}
+p[data-speech]:before {
+  position: absolute;
+  top: -1em;
+  right: 0;
+  content: 'y';
+  opacity: 0.5;
+  cursor: pointer;
+  color: var(--inkw);
+  font-family: 'Badge';
+}
+p[data-speech]:hover:before {
+  opacity: 1;
+  color: var(--inks);
+}
+p.active[data-speech]:before {
+  opacity: 1;
+  color: var(--inkr);
+}
+p.play[data-speech]:before {
+  opacity: 1;
+  color: var(--inkc);
+}
+abbr {
+  color: brown;
+}
+
+strong {
+  display: block;
+  margin: 1em 2em;
+  position: relative;
+  font-weight: normal;
+  text-align: justify;
+  padding: 0.5em 0.5em 0.5em 2.5em;
+}
+strong::after {
+  top: 0.03em;
+  width: 1em;
+  left: 0.1em;
+  height: 1em;
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: bold;
+  border-width: 3px;
+  text-align: center;
+  position: absolute;
+  border-radius: 1em;
+  font-family: 'Badge';
+  display: inline-block;
+}
+strong.critical,
+strong.critical * {
+  color:var(--inkc);
+  background-color:var(--dyec);
+}
+strong.critical:after {
+  content: '*';
+  color:var(--dyec);
+  background-color:var(--inkc);
+}
+strong.warning,
+strong.warning * {
+  color:var(--inkw);
+  background-color:var(--dyew);
+}
+strong.warning:after {
+  content: '!';
+  color:var(--dyew);
+  background-color:var(--inkw);
+}
+strong.success,
+strong.success * {
+  color:var(--inks);
+  background-color:var(--dyes);
+}
+strong.success:after {
+    content: ',';
+    color:var(--dyes);
+    background-color:var(--inks);
+}
+strong.reference,
+strong.reference * {
+  color:var(--inkr);
+  background-color:var(--dyer);
+}
+strong.reference:after {
+  content: 'i';
+  color:var(--dyer);
+  background-color:var(--inkr);
+}
+
+mark.critical {
+  background-color: var(--dyec);
+}
+mark.warning {
+  background-color: var(--dyew);
+}
+mark.success {
+  background-color: var(--dyes);
+}
+mark.reference {
+  background-color: var(--dyer);
+}
+
+listing {
+  margin: auto;
+  padding: 3px;
+  overflow: hidden;
+  font-size: 0.9em;
+  position: relative;
+  white-space: normal;
+}
+listing, listing * {
+  background-color: var(--dyea);
+}
+listing[data-caption] {
+  padding-top: 1.1em;
+}
+listing[data-caption]::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  font-size: 0.9em;
+  padding-left: 5px;
+  position: absolute;
+  white-space: nowrap;
+  color: var(--inkh);
+  background-color: var(--dyeh);
+  content: attr(data-caption)':';
+}
+listing comment {
+  display: block;
+}
+listing comment::before {
+  content: '// ';
+}
+listing comment[multiline]::before {
+  content: '/* ';
+}
+listing comment[multiline]::after {
+  content: ' */';
+}
+code {min-width: 0}

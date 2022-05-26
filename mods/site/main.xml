@@ -1,0 +1,14 @@
+<OWNI title="Главная">
+  <style css="values,colors,hull,flex,align,border,text"/>
+  <fonts>Badge,BadScript</fonts>
+  <answer frame.="site">
+    <title _var="title"/>
+    <body_body>
+    тест
+    </body_body>
+  </answer>
+  <!--
+  <labels></labels>
+  <script></script>
+  -->
+</OWNI>

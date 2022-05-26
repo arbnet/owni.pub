@@ -1,0 +1,43 @@
+body[data-trait~="footer-fixed"] main {
+  margin-bottom: var(--footer);
+}
+main {
+  z-index: 1;
+}
+header {
+	z-index: 5;
+	width: 100%;
+	text-align: center;
+	height: var(--header);
+}
+aside{
+  order: 1;
+  z-index: 1;
+  flex-basis: auto;
+  width: var(--aside);
+}
+aside[data-trait~="right"] {
+  order: 4;
+  z-index: 4;
+}
+aside.adapt[data-trait~="left"] {
+  order: 2;
+  z-index: 2;
+}
+section {
+  order: 3;
+  z-index: 3;
+  position: relative;
+}
+footer {
+  z-index: 0;
+  width: 100%;
+	text-align: center;
+  height: var(--footer);
+}
+body[data-trait~="footer-fixed"] footer {
+  bottom: 0;
+  z-index: 6;
+  width: inherit;
+  position: fixed;
+}

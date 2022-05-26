@@ -1,0 +1,9 @@
+Options -Indexes
+DirectoryIndex run.php
+AddDefaultCharset UTF-8
+php_value session.name SID
+
+RewriteEngine On
+RewriteRule ~(.*) route.web?dmn=$1 [L]
+RewriteRule (.*)\+ site/registration?inv=$1 [L]
+RewriteRule !.(ico)$ run.php [QSA,L]

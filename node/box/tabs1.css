@@ -1,0 +1,52 @@
+div.boxtabs1 {
+  margin: var(--gap);
+  border: var(--c9) solid var(--rim);
+}
+div.boxtabs1 > input {display: none}
+/* div.boxtabs1 > div:first-of-type {
+    border: 1px solid var(--edge);
+    border-bottom: none;
+} */
+div.boxtabs1 > div:first-of-type > label {
+  padding: 5px;
+  cursor: pointer;
+  line-height: 20px;
+  text-align: center;
+  color: var(--c1);
+  background-color: var(--c5);
+  border: var(--rim) solid var(--c9);
+}
+div.boxtabs1 > div:last-of-type > div {
+  margin: 0;
+  z-index: 0;
+  height: 100%;
+  display: none;
+  padding: var(--pit);
+  background: var(--c0);
+}
+input[id$="boxtabs1i1"]:checked ~ div > [id$="boxtabs1r1"],
+input[id$="boxtabs1i2"]:checked ~ div > [id$="boxtabs1r2"],
+input[id$="boxtabs1i3"]:checked ~ div > [id$="boxtabs1r3"],
+input[id$="boxtabs1i4"]:checked ~ div > [id$="boxtabs1r4"],
+input[id$="boxtabs1i5"]:checked ~ div > [id$="boxtabs1r5"],
+input[id$="boxtabs1i6"]:checked ~ div > [id$="boxtabs1r6"],
+input[id$="boxtabs1i7"]:checked ~ div > [id$="boxtabs1r7"],
+input[id$="boxtabs1i8"]:checked ~ div > [id$="boxtabs1r8"],
+input[id$="boxtabs1i9"]:checked ~ div > [id$="boxtabs1r9"] {
+  display: block
+}
+input[id$="boxtabs1i1"]:checked ~ div > [for$="boxtabs1i1"],
+input[id$="boxtabs1i2"]:checked ~ div > [for$="boxtabs1i2"],
+input[id$="boxtabs1i3"]:checked ~ div > [for$="boxtabs1i3"],
+input[id$="boxtabs1i4"]:checked ~ div > [for$="boxtabs1i4"],
+input[id$="boxtabs1i5"]:checked ~ div > [for$="boxtabs1i5"],
+input[id$="boxtabs1i6"]:checked ~ div > [for$="boxtabs1i6"],
+input[id$="boxtabs1i7"]:checked ~ div > [for$="boxtabs1i7"],
+input[id$="boxtabs1i8"]:checked ~ div > [for$="boxtabs1i8"],
+input[id$="boxtabs1i9"]:checked ~ div > [for$="boxtabs1i9"] {
+    order: 999;
+    cursor: default;
+    font-weight: bold;
+    color: black;
+    background-color: var(--dye0);
+}

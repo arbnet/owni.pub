@@ -1,0 +1,6 @@
+RewriteEngine On
+Options +FollowSymlinks
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule !.(css|gif|ico|jpg|js|json|png|tag|woff)$ /site/nopage [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule .* /run.php [QSA,L]

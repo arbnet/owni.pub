@@ -1,0 +1,70 @@
+/* input:not([type="range"]):not([type="radio"]),
+input, select, button {height: 1.3em}
+*/
+
+input, select, button, textarea {font-size: inherit}
+input.field, select.field, button.field, div.field {
+  height: auto;
+  /* margin: 0.1em;padding: 0.15em; */
+  min-width: 2em;
+  
+  max-height: 1.8em;
+  border: 1px solid var(--edge);
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+}
+input[name="captcha"] {
+  text-align: center;
+  width: calc(1em * 8);
+}
+input.field[type="color"] {width: 1em}
+div.field {
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+textarea.fill {width: 100%}
+textarea{box-sizing: border-box}
+/*
+display: flex;
+align-items: flex-end;
+  justify-content: center;
+*/
+select.field:hover,
+select.field:hover *,
+button.field:hover *,
+div.field.button:hover,
+div.field.button:hover * {
+  color: var(--inkb);
+  background-color: var(--dyeb);
+}
+div.field > mark {
+  top: 0;
+  font-size: 0.5em;
+  position: absolute;
+}
+div.field > mark.left {
+  float: left;
+  margin-left: 0.5em;
+}
+div.field > mark.right {
+  float: right;
+  margin-right: 0.5em;
+}
+div.field > input,
+div.field > select {border: none}
+
+/* div.field input:not([type="radio"]):not([type="checkbox"]) {
+  width: calc(100% - var(--pit) * 3);
+} */
+.noline,[class*="field"], [class*="field"] * {outline: none}
+button:hover:not([disabled]) {
+  cursor: pointer;
+  color: var(--inkb);
+  background-color: var(--dyeb);
+}
+
+input[type="checkbox"] + bdi::before {content: attr(data-off)}
+input[type="checkbox"]:checked + bdi::before {content: attr(data-on)}

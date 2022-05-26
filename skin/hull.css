@@ -1,0 +1,38 @@
+.hull {
+  position:relative;
+}
+.hull > .bind {
+  position: absolute;
+  display: inline-block;
+}
+.hull > .fill {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.hull.pit1 > .fill {
+  top: var(--pit);
+  left: var(--pit);
+  right: var(--pit);
+  bottom: var(--pit);
+}
+.hull.pit2 > .fill {
+  top: calc(var(--pit) * 2);
+  left: calc(var(--pit) * 2);
+  right: calc(var(--pit) * 2);
+  bottom: calc(var(--pit) * 2);
+}
+.hull > .top {top: 0}
+.hull > .left {left: 0}
+.hull > .right {right: 0}
+.hull > .bottom {bottom: 0}
+.hull > .sticky {position: sticky}
+.hull.pit1 > .top {top: var(--pit)}
+.hull.pit1 > .left {left: var(--pit)}
+.hull.pit1 > .right {right: var(--pit)}
+.hull.pit1 > .bottom {bottom: var(--pit)}
+.hull.pit2 > .top {top: calc(var(--pit) * 2)}
+.hull.pit2 > .left {left: calc(var(--pit) * 2)}
+.hull.pit2 > .right {right: calc(var(--pit) * 2)}
+.hull.pit2 > .bottom {bottom: calc(var(--pit) * 2)}

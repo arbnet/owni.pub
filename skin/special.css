@@ -1,0 +1,168 @@
+/* не определённый пользовательский элемент не будет виден :not(:defined) */
+.hide, .p-show, :not(:defined) {display: none !important}
+.hunk {display: inline-block}
+.invisible{visibility: hidden}
+/* стили курсора */
+.cursor-wait {cursor: wait}
+.cursor-move {cursor: move}
+.cursor-help {cursor: help}
+.cursor-pointer {cursor: pointer}
+.cursor-progress {cursor: progress}
+.cursor-resize {cursor: nwse-resize}
+.cursor-crosshair {cursor: crosshair}
+.noresize{resize: none}
+.resize {
+  resize: both;
+  overflow:auto;
+}
+.resize-x {
+  resize: horizontal;
+  overflow-x: auto;
+}
+.resize-y {
+  resize: vertical;
+  overflow-y: auto;
+}
+.limvh {height: calc(100vh - var(--vh))}
+.scroll {overflow: auto}
+.noscroll {overflow: hidden}
+.scroll-x {overflow-x: auto;overflow-y: hidden}
+.scroll-y {overflow-x: hidden;overflow-y: auto}
+.nowrap {white-space: nowrap}
+xmp.wrap {white-space: pre-wrap}
+
+@media screen and (orientation: portrait) {
+  .p-sticky {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    position: sticky;
+  }
+}
+@media screen and (orientation: portrait) {
+  .p-hide {display: none}
+  .p-hunk {display: inline-block}
+  .p-show {display: block !important}
+  
+  input[id|="l"]:checked ~ .i-show,
+  input[id|="l"]:checked ~ * > .i-show {
+    display: block !important
+  }
+  input[id|="l"]:checked ~ .i-hide {
+    display: none !important
+  }
+  input[id|="l"]:checked ~ .i-hunk {
+    display: inline-block !important
+  }
+}
+
+
+
+.fixed {position: fixed}
+label {cursor: pointer}
+z {
+  float: right;
+  margin-right: 10px;
+  font-family: 'Badge';
+  background-color: inherit;
+}
+z::after {
+  content: '\E3';
+}
+/* Всплывающая подсказка */
+[data-hint] {
+  position: relative;
+  text-indent: initial;
+}
+[data-hint]:hover:before,
+[data-hint]:hover:after {opacity: 1}
+[data-hint]:before {
+  left: 1em;
+  top: 2.1em;
+  opacity: 0;
+  font-size: 0.4em;
+  position: absolute;
+  content: '\25B2';
+  transition: 0.5s opacity;
+}
+[data-hint]:after {
+  left: 0;
+  top: 1.7em;
+  opacity: 0;
+  font-size: 0.7em;
+  position: absolute;
+  text-align: center;
+  padding: 0.02em 0.08em;
+  content: attr(data-hint);
+  transition: 0.5s opacity;
+  background-color: var(--dyea);
+  border: 1px solid var(--edge);
+}
+span.sprite-title {
+  float: right;
+  font-size: var(-hgt);
+}
+div.cap {
+  position: relative;
+  white-space: nowrap;
+}
+div.cap,
+div.cap * {
+  padding: 0.1em;
+  color: var(--dyem);
+  background-color: var(--dyeh);
+}
+div.cap a {
+  cursor: pointer;
+  font-size: 0.8em;
+}
+div[data-title]::after {
+  top: -0.05em;
+  left: 0.2em;
+  color: var(--inkh);
+  position: absolute;
+  content: attr(data-title);
+  font-size: calc(var(--size) * 0.8);
+}
+/* отключение выделения */
+.noselection {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+.selection {
+  user-select: initial;
+  -ms-user-select: initial;
+  -moz-user-select: initial;
+  -khtml-user-select: initial;
+  -webkit-user-select: initial;
+  -webkit-touch-callout: initial;
+}
+img.zoom {
+  transition: all 1s linear;
+}
+img.zoom:hover {
+  transform:scale(5) translate(0.75em,-0.9em);
+}
+img.cover {
+  object-fit: cover;
+}
+.hover {
+  display: none;
+  position: absolute;
+}
+*:hover > .hover, *:hover + .hover {
+  display: block;
+}
+pre.see * {
+  font-size: 0.7em;
+  margin: 0 0.3em;
+  padding: 0 0.5em;
+  text-align: left;
+  background-color: var(--dyes);
+}

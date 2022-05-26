@@ -1,0 +1,50 @@
+div.table {display: table}
+div.row {display: table-row}
+div.cell {display: table-cell}
+
+table {
+  border-collapse: collapse;
+  border: var(--brd) solid var(--edge);
+}
+tbody {overflow: auto;}
+th {
+  top: 0;
+  position: sticky;
+}
+table tr th, table tr td {
+  padding: var(--pit);
+  border: 1px solid var(--dyem);
+}
+/*, table tr th
+
+**/
+table caption {
+  padding: var(--pit);
+  color: var(--dye);
+  background-color: var(--cp4);
+  border-bottom: var(--brd) solid var(--edge);
+}
+table tr th {
+  color: var(--cp7);
+  background-color: var(--cp3);
+}
+table thead th {
+  border-bottom: calc(var(--brd) * 3) solid var(--edge);
+
+}
+table tbody th, table thead th:not(:last-of-type) {
+  border-right: calc(var(--brd) * 3) solid var(--edge);
+}
+table tr td {
+  background-color: var(--cp1);
+}
+table.zebra-h tbody tr:nth-child(even) td,
+table.zebra-v tbody tr td:nth-child(even),
+table.zebra-h tbody tr:nth-child(even) td * ,
+table.zebra-v tbody tr td:nth-child(even) * {
+  background-color: var(--cp2);
+}
+table tfoot tr td {
+  background-color: var(--dye3);
+  border-color: var(--dye3);
+}

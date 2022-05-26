@@ -1,0 +1,40 @@
+div[id^="box"] {
+  display: flex;
+  color: var(--ink0);
+  border-style: solid;
+  flex-direction: column;
+  background-color: var(--dye0);
+}
+div[id^="box"] > label {
+  padding: var(--pit);
+}
+div[id^="box"] > label bdi {
+  float: right;
+  font-family: 'Badge';
+  margin-right: var(--pit);
+}
+div[id^="box"] > label bdi::after {
+  content: 'я';
+}
+div[id^="box"] > input:checked + label bdi::after {
+  content: 'ь';
+}
+div[id^="box"] > div {
+  opacity: 0;
+  max-height: 0;
+  visibility: hidden;
+  padding: var(--pit);
+  border-top-style: dashed;
+  transition: max-height 5s cubic-bezier(1, 0, 1, 0), opacity 3s ease;
+}
+div[id^="box"] > input:checked ~div {
+  opacity: 1;
+  max-height: inherit;
+  visibility: visible;
+}
+/*
+
+transition: all 5s ease;
+visibility: visible;
+display: block;
+*/

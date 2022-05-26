@@ -1,0 +1,148 @@
+.flex {display: flex}
+.flex-inline {display: inline-flex}
+.flex > div:empty {margin: 0;height: 0;flex-basis: 100%}
+/* перенос элементов на новую строку */
+.flex-wrap {flex-wrap: wrap}
+.flex-wrap-r {flex-wrap: wrap-reverse}
+/* пробел между элементами */
+.flex-gap1 {padding: var(--gap)}
+.flex-gap1 > * {margin: var(--gap)}
+.flex-gap2 {padding: calc(var(--gap) * 2)}
+.flex-gap2 > * {margin: calc(var(--gap) * 2)}
+/* направление элементов */
+.flex-row {flex-direction: row}
+.flex-column {flex-direction: column}
+.flex-row-r {flex-direction: row-reverse}
+.flex-column-r {flex-direction: column-reverse}
+/* расположение по горизонтали */
+.flex-center {justify-content: center}
+.flex-right {justify-content: flex-end}
+.flex-left {justify-content: flex-start}
+.flex-evenly {justify-content: space-evenly}
+.flex-around-h {justify-content: space-around}
+.flex-between-h {justify-content: space-between}
+/* расположение по вертикали */
+.flex-middle {align-content: center}
+.flex-top {align-content: flex-start}
+.flex-bottom {align-content: flex-end}
+.flex-stretch {align-content: stretch}
+.flex-around-v {align-content: space-around}
+.flex-between-v {align-content: space-between}
+/* выравнивание элементов по вертикали */
+.flex-i-middle {align-items: center}
+.flex-i-top {align-items: flex-start}
+.flex-i-bottom {align-items: flex-end}
+.flex-i-stretch {align-items: stretch}
+.flex-i-baseline {align-items: baseline}
+/* выравнивание элемента по вертикали */
+.flex > .s-middle, .flex-inline > .s-middle {align-self: center}
+.flex > .s-top, .flex-inline > .s-top {align-self: flex-start}
+.flex > .s-stretch, .flex-inline > .s-stretch {align-self: stretch}
+.flex > .s-bottom, .flex-inline > .s-bottom {align-self: flex-end}
+.flex > .s-baseline, .flex-inline > .s-baseline {align-self: baseline}
+/* приоритеты: очередь, увеличение, уменьшение, базис */
+.flex-o0 {order: 0}
+.flex-o1 {order: 1}
+.flex-o2 {order: 2}
+.flex-o3 {order: 3}
+.flex-o4 {order: 4}
+.flex-o5 {order: 5}
+.flex-o6 {order: 6}
+.flex-o7 {order: 7}
+.flex-o8 {order: 8}
+.flex-o9 {order: 9}
+.flex-g0 {flex-grow: 0}
+.flex-g1 {flex-grow: 1}
+.flex-g2 {flex-grow: 2}
+.flex-g3 {flex-grow: 3}
+.flex-g4 {flex-grow: 4}
+.flex-g5 {flex-grow: 5}
+.flex-g6 {flex-grow: 6}
+.flex-g7 {flex-grow: 7}
+.flex-g8 {flex-grow: 8}
+.flex-g9 {flex-grow: 9}
+.flex-s0 {flex-shrink: 0}
+.flex-s1 {flex-shrink: 1}
+.flex-s2 {flex-shrink: 2}
+.flex-s3 {flex-shrink: 3}
+.flex-s4 {flex-shrink: 4}
+.flex-s5 {flex-shrink: 5}
+.flex-s6 {flex-shrink: 6}
+.flex-s7 {flex-shrink: 7}
+.flex-s8 {flex-shrink: 8}
+.flex-s9 {flex-shrink: 9}
+.flex-b0 {flex-basis: 0}
+.flex-b1 {flex-basis: 10%}
+.flex-b2 {flex-basis: 20%}
+.flex-b3 {flex-basis: 30%}
+.flex-b4 {flex-basis: 40%}
+.flex-b5 {flex-basis: 50%}
+.flex-b6 {flex-basis: 60%}
+.flex-b7 {flex-basis: 70%}
+.flex-b8 {flex-basis: 80%}
+.flex-b9 {flex-basis: 90%}
+.flex-bm {flex-basis: 100%}
+.flex-ba {flex-basis: auto}
+/* ориентация книжная */
+@media screen and (orientation: portrait) {
+	.flex-p-wrap {flex-wrap: wrap}
+	.flex-p-wrap-r {flex-wrap: wrap-reverse}
+	.flex-p-row {flex-direction: row}
+	.flex-p-column {flex-direction: column}
+	.flex-p-row-r {flex-direction: row-reverse}
+	.flex-p-column-r {flex-direction: column-reverse}
+	.flex-p-center {justify-content: center}
+	.flex-p-right {justify-content: flex-end}
+	.flex-p-left {justify-content: flex-start}
+	.flex-p-evenly {justify-content: space-evenly}
+	.flex-p-around-h {justify-content: space-around}
+	.flex-p-between-h {justify-content: space-between}
+	.flex-p-middle {align-content: center}
+	.flex-p-top {align-content: flex-start}
+	.flex-p-bottom {align-content: flex-end}
+	.flex-p-stretch {align-content: stretch}
+	.flex-p-around-v {align-content: space-around}
+	.flex-p-between-v {align-content: space-between}
+	.flex-p-o0 {order: 0}
+	.flex-p-o1 {order: 1}
+	.flex-p-o2 {order: 2}
+	.flex-p-o3 {order: 3}
+	.flex-p-o4 {order: 4}
+	.flex-p-o5 {order: 5}
+	.flex-p-o6 {order: 6}
+	.flex-p-o7 {order: 7}
+	.flex-p-o8 {order: 8}
+	.flex-p-o9 {order: 9}
+	.flex-p-g0 {flex-grow: 0}
+	.flex-p-g1 {flex-grow: 1}
+	.flex-p-g2 {flex-grow: 2}
+	.flex-p-g3 {flex-grow: 3}
+	.flex-p-g4 {flex-grow: 4}
+	.flex-p-g5 {flex-grow: 5}
+	.flex-p-g6 {flex-grow: 6}
+	.flex-p-g7 {flex-grow: 7}
+	.flex-p-g8 {flex-grow: 8}
+	.flex-p-g9 {flex-grow: 9}
+	.flex-p-s0 {flex-shrink: 0}
+	.flex-p-s1 {flex-shrink: 1}
+	.flex-p-s2 {flex-shrink: 2}
+	.flex-p-s3 {flex-shrink: 3}
+	.flex-p-s4 {flex-shrink: 4}
+	.flex-p-s5 {flex-shrink: 5}
+	.flex-p-s6 {flex-shrink: 6}
+	.flex-p-s7 {flex-shrink: 7}
+	.flex-p-s8 {flex-shrink: 8}
+	.flex-p-s9 {flex-shrink: 9}
+	.flex-p-b0 {flex-basis: 0}
+	.flex-p-b1 {flex-basis: 10%}
+	.flex-p-b2 {flex-basis: 20%}
+	.flex-p-b3 {flex-basis: 30%}
+	.flex-p-b4 {flex-basis: 40%}
+	.flex-p-b5 {flex-basis: 49%}
+	.flex-p-b6 {flex-basis: 60%}
+	.flex-p-b7 {flex-basis: 70%}
+	.flex-p-b8 {flex-basis: 80%}
+	.flex-p-b9 {flex-basis: 90%}
+	.flex-p-bm {flex-basis: 100%}
+	.flex-p-ba {flex-basis: auto}
+}

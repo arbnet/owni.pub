@@ -1,0 +1,245 @@
+/* расположение */
+.both {clear: both}
+.center{margin: auto}
+.float-left {float: left}
+.float-right {float: right}
+.direct-left {direction: ltr}
+.direct-right {direction: rtl}
+/* ширина элемента */
+.w0 {width: initial}
+.w1 {width: 10%}
+.w2 {width: 20%}
+.w3 {width: 30%}
+.w4 {width: 40%}
+.w5 {width: 50%}
+.w6 {width: 60%}
+.w7 {width: 70%}
+.w8 {width: 80%}
+.w9 {width: 90%}
+.wm {width: 100%}
+.wa {width: auto}
+.wp {width: inherit}
+/*;min-width: 1em*/
+.minno {min-width: none}
+.maxno {max-width: none}
+/* высота элемента */
+.h0 {height: initial}
+.h1 {height: 10%}
+.h2 {height: 20%}
+.h3 {height: 30%}
+.h4 {height: 40%}
+.h5 {height: 50%}
+.h6 {height: 60%}
+.h7 {height: 70%}
+.h8 {height: 80%}
+.h9 {height: 90%}
+.hm {height: 100%;min-height: 1em}
+.ha {height: auto}
+.hp {height: inherit}
+.minhn {min-height: none}
+.maxhn {max-height: none}
+.minvh {min-height: 100vh}
+.maxvh {max-height: 100vh}
+/* наложение */
+.z0 {z-index: 0}
+.z1 {z-index: 1}
+.z2 {z-index: 2}
+.z3 {z-index: 3}
+.z4 {z-index: 4}
+.z5 {z-index: 5}
+.z6 {z-index: 6}
+.z7 {z-index: 7}
+.z8 {z-index: 8}
+.z9 {z-index: 9}
+.zb {z-index: -1}
+.zf {z-index: 999}
+/* ориентация книжная */
+@media screen and (orientation: portrait) {
+  .p-hide{display: none}
+  /* ширина элемента */
+  .p-w-0 {width: initial}
+  .p-w-1 {width: 10%}
+  .p-w-2 {width: 20%}
+  .p-w-3 {width: 30%}
+  .p-w-4 {width: 40%}
+  .p-w-5 {width: 50%}
+  .p-w-6 {width: 60%}
+  .p-w-7 {width: 70%}
+  .p-w-8 {width: 80%}
+  .p-w-9 {width: 90%}
+  .p-w-m {width: 100%}
+  .p-w-a {width: auto}
+  .p-w-p {width: inherit}
+  .p-min-w-0 {min-width: none}
+  .p-min-w-1 {min-width: 10%}
+  .p-min-w-2 {min-width: 20%}
+  .p-min-w-3 {min-width: 30%}
+  .p-min-w-4 {min-width: 40%}
+  .p-min-w-5 {min-width: 50%}
+  .p-min-w-6 {min-width: 60%}
+  .p-min-w-7 {min-width: 70%}
+  .p-min-w-8 {min-width: 80%}
+  .p-min-w-9 {min-width: 90%}
+  .p-min-w-m {min-width: 100%}
+  .p-min-w-a {min-width: auto}
+  .p-min-w-p {min-width: inherit}
+  .p-max-w-0 {max-width: none}
+  .p-max-w-1 {max-width: 10%}
+  .p-max-w-2 {max-width: 20%}
+  .p-max-w-3 {max-width: 30%}
+  .p-max-w-4 {max-width: 40%}
+  .p-max-w-5 {max-width: 50%}
+  .p-max-w-6 {max-width: 60%}
+  .p-max-w-7 {max-width: 70%}
+  .p-max-w-8 {max-width: 80%}
+  .p-max-w-9 {max-width: 90%}
+  .p-max-w-m {max-width: 100%}
+  .p-max-w-a {max-width: auto}
+  .p-max-w-p {max-width: inherit}
+  /* высота элемента */
+  .p-h-0 {height: initial}
+  .p-h-1 {height: 10%}
+  .p-h-2 {height: 20%}
+  .p-h-3 {height: 30%}
+  .p-h-4 {height: 40%}
+  .p-h-5 {height: 50%}
+  .p-h-6 {height: 60%}
+  .p-h-7 {height: 70%}
+  .p-h-8 {height: 80%}
+  .p-h-9 {height: 90%}
+  .p-h-m {height: 100%}
+  .p-h-a {height: auto}
+  .p-min-h-0 {min-height: none}
+  .p-min-h-1 {min-height: 10%}
+  .p-min-h-2 {min-height: 20%}
+  .p-min-h-3 {min-height: 30%}
+  .p-min-h-4 {min-height: 40%}
+  .p-min-h-5 {min-height: 50%}
+  .p-min-h-6 {min-height: 60%}
+  .p-min-h-7 {min-height: 70%}
+  .p-min-h-8 {min-height: 80%}
+  .p-min-h-9 {min-height: 90%}
+  .p-min-h-m {min-height: 100%}
+  .p-min-h-a {min-height: auto}
+  .p-max-h-0 {max-height: none}
+  .p-max-h-1 {max-height: 10%}
+  .p-max-h-2 {max-height: 20%}
+  .p-max-h-3 {max-height: 30%}
+  .p-max-h-4 {max-height: 40%}
+  .p-max-h-5 {max-height: 50%}
+  .p-max-h-6 {max-height: 60%}
+  .p-max-h-7 {max-height: 70%}
+  .p-max-h-8 {max-height: 80%}
+  .p-max-h-9 {max-height: 90%}
+  .p-max-h-m {max-height: 100%}
+  .p-max-h-a {max-height: auto}
+  /* наложение */
+  .p-z-0 {z-index: 0}
+  .p-z-1 {z-index: 1}
+  .p-z-2 {z-index: 2}
+  .p-z-3 {z-index: 3}
+  .p-z-4 {z-index: 4}
+  .p-z-5 {z-index: 5}
+  .p-z-6 {z-index: 6}
+  .p-z-7 {z-index: 7}
+  .p-z-8 {z-index: 8}
+  .p-z-9 {z-index: 9}
+  .p-z-b {z-index: -1}
+  .p-z-f {z-index: 999}
+}
+
+/* отступ для дочерних элементов */
+.pit0 {padding: 0}
+.pit1,.pit > * {padding: var(--pit)}
+.pit01 {padding: 0 var(--pit)}
+.pit10 {padding: var(--pit) 0}
+.pit2 {padding: calc(var(--pit) * 2)}
+.pit02 {padding: 0 calc(var(--pit) * 2)}
+.pit20 {padding: calc(var(--pit) * 2) 0}
+.wm.gap1 {
+  width: calc(100% - var(--gap) * 3)
+}
+/* отступ элемента */
+.void-left {margin-left: auto}
+.void-right {margin-right: auto}
+.gap0 {margin: 0}
+.gap1 {margin: var(--gap)}
+.gap2{margin: calc(var(--gap) * 2)}
+.gap01,.gap0101{margin: 0 var(--gap)}
+.gap02,.gap0202{margin: 0 calc(var(--gap) * 2)}
+.gap10,.gap1010{margin: var(--gap) 0}
+.gap20,.gap2020{margin: calc(var(--gap) * 2) 0}
+.gap12,.gap1212{margin: var(--gap) calc(var(--gap) * 2)}
+.gap21,.gap2121{margin: calc(var(--gap) * 2) var(--gap)}
+.gap0001{margin: 0 0 0 var(--gap)}
+.gap0002{margin: 0 0 0 calc(var(--gap) * 2)}
+.gap0010{margin: 0 var(--gap) 0 0}
+.gap0012{margin: 0 var(--gap) 0 calc(var(--gap) * 2)}
+.gap0020{margin: 0 calc(var(--gap) * 2) 0 0}
+.gap0021{margin: 0 calc(var(--gap) * 2) 0 var(--gap)}
+.gap0100{margin: 0 0 var(--gap) 0}
+.gap0101{margin: 0 0 var(--gap) var(--gap)}
+.gap0102{margin: 0 0 var(--gap) calc(var(--gap) * 2)}
+.gap0110{margin: 0 var(--gap) var(--gap) 0}
+.gap0111{margin: 0 var(--gap) var(--gap) var(--gap)}
+.gap0112{margin: 0 var(--gap) var(--gap) calc(var(--gap) * 2)}
+.gap0120{margin: 0 calc(var(--gap) * 2) var(--gap) 0}
+.gap0121{margin: 0 calc(var(--gap) * 2) var(--gap) var(--gap)}
+.gap0122{margin: 0 calc(var(--gap) * 2) var(--gap) calc(var(--gap) * 2)}
+.gap0200{margin: 0 0 calc(var(--gap) * 2) 0}
+.gap0201{margin: 0 0 calc(var(--gap) * 2) var(--gap)}
+.gap0202{margin: 0 0 calc(var(--gap) * 2) calc(var(--gap) * 2)}
+.gap0210{margin: 0 var(--gap) calc(var(--gap) * 2) 0}
+.gap0211{margin: 0 var(--gap) calc(var(--gap) * 2) var(--gap)}
+.gap0212{margin: 0 var(--gap) calc(var(--gap) * 2) calc(var(--gap) * 2)}
+.gap0220{margin: 0 calc(var(--gap) * 2) calc(var(--gap) * 2) 0}
+.gap0221{margin: 0 calc(var(--gap) * 2) calc(var(--gap) * 2) var(--gap)}
+.gap0222{margin: 0 calc(var(--gap) * 2) calc(var(--gap) * 2) calc(var(--gap) * 2)}
+.gap1000{margin: var(--gap) 0 0 0}
+.gap1001{margin: var(--gap) 0 0 var(--gap)}
+.gap1002{margin: var(--gap) 0 0 calc(var(--gap) * 2)}
+.gap1010{margin: var(--gap) var(--gap) 0 0}
+.gap1011{margin: var(--gap) var(--gap) 0 var(--gap)}
+.gap1012{margin: var(--gap) var(--gap) 0 calc(var(--gap) * 2)}
+.gap1020{margin: var(--gap) calc(var(--gap) * 2) 0 0}
+.gap1021{margin: var(--gap) calc(var(--gap) * 2) 0 var(--gap)}
+.gap1022{margin: var(--gap) calc(var(--gap) * 2) 0 calc(var(--gap) * 2)}
+.gap1101{margin: var(--gap) 0 var(--gap) var(--gap)}
+.gap1102{margin: var(--gap) 0 var(--gap) calc(var(--gap) * 2)}
+.gap1110{margin: var(--gap) var(--gap) var(--gap) 0}
+.gap1112{margin: var(--gap) var(--gap) var(--gap) calc(var(--gap) * 2)}
+.gap1120{margin: var(--gap) calc(var(--gap) * 2) var(--gap) 0}
+.gap1121{margin: var(--gap) calc(var(--gap) * 2) var(--gap) var(--gap)}
+.gap1200{margin: var(--gap) 0 calc(var(--gap) * 2) 0}
+.gap1201{margin: var(--gap) 0 calc(var(--gap) * 2) var(--gap)}
+.gap1202{margin: var(--gap) 0 calc(var(--gap) * 2) calc(var(--gap) * 2)}
+.gap1210{margin: var(--gap) var(--gap) calc(var(--gap) * 2) 0}
+.gap1211{margin: var(--gap) var(--gap) calc(var(--gap) * 2) var(--gap)}
+.gap1212{margin: var(--gap) var(--gap) calc(var(--gap) * 2) calc(var(--gap) * 2)}
+.gap1220{margin: var(--gap) calc(var(--gap) * 2) calc(var(--gap) * 2) 0}
+.gap1221{margin: var(--gap) calc(var(--gap) * 2) calc(var(--gap) * 2) var(--gap)}
+.gap1222{margin: var(--gap) calc(var(--gap) * 2) calc(var(--gap) * 2) calc(var(--gap) * 2)}
+.gap2000{margin: calc(var(--gap) * 2) 0 0 0}
+.gap2001{margin: calc(var(--gap) * 2) 0 0 var(--gap)}
+.gap2002{margin: calc(var(--gap) * 2) 0 0 calc(var(--gap) * 2)}
+.gap2010{margin: calc(var(--gap) * 2) var(--gap) 0 0}
+.gap2011{margin: calc(var(--gap) * 2) var(--gap) 0 var(--gap)}
+.gap2012{margin: calc(var(--gap) * 2) var(--gap) 0 calc(var(--gap) * 2)}
+.gap2020{margin: calc(var(--gap) * 2) calc(var(--gap) * 2) 0 0}
+.gap2021{margin: calc(var(--gap) * 2) calc(var(--gap) * 2) 0 var(--gap)}
+.gap2022{margin: calc(var(--gap) * 2) calc(var(--gap) * 2) 0 calc(var(--gap) * 2)}
+.gap2100{margin: calc(var(--gap) * 2) 0 var(--gap) 0}
+.gap2101{margin: calc(var(--gap) * 2) 0 var(--gap) var(--gap)}
+.gap2102{margin: calc(var(--gap) * 2) 0 var(--gap) calc(var(--gap) * 2)}
+.gap2110{margin: calc(var(--gap) * 2) var(--gap) var(--gap) 0}
+.gap2111{margin: calc(var(--gap) * 2) var(--gap) var(--gap) var(--gap)}
+.gap2112{margin: calc(var(--gap) * 2) var(--gap) var(--gap) calc(var(--gap) * 2)}
+.gap2120{margin: calc(var(--gap) * 2) calc(var(--gap) * 2) var(--gap) 0}
+.gap2121{margin: calc(var(--gap) * 2) calc(var(--gap) * 2) var(--gap) var(--gap)}
+.gap2122{margin: calc(var(--gap) * 2) calc(var(--gap) * 2) var(--gap) calc(var(--gap) * 2)}
+.gap2201{margin: calc(var(--gap) * 2) 0 calc(var(--gap) * 2) var(--gap)}
+.gap2202{margin: calc(var(--gap) * 2) 0 calc(var(--gap) * 2) calc(var(--gap) * 2)}
+.gap2210{margin: calc(var(--gap) * 2) var(--gap) calc(var(--gap) * 2) 0}
+.gap2212{margin: calc(var(--gap) * 2) var(--gap) calc(var(--gap) * 2) calc(var(--gap) * 2)}
+.gap2220{margin: calc(var(--gap) * 2) calc(var(--gap) * 2) calc(var(--gap) * 2) 0}
+.gap2221{margin: calc(var(--gap) * 2) calc(var(--gap) * 2) calc(var(--gap) * 2) var(--gap)}

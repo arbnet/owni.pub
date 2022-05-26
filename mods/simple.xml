@@ -1,0 +1,13 @@
+<OWNI>
+  <style css="values,colors,hull,flex,align"/>
+  <answer frame.="site"><title _var="title"/>
+    <body_body class="hull center flex flex-column center[bclass]">
+      <_header _xml="header"/>
+      <_main class="flex-g1[mclass]">
+        [content]
+      </_main>
+      <_footer _xml="footer"/>
+    </body_body>
+  </answer>
+  <labels>bclass,mclass</labels>
+</OWNI>

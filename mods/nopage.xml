@@ -1,0 +1,16 @@
+<OWNI title="НЕТ СТРАНИЦЫ">
+  <answer _xml="simple">
+    <align>center !</align>
+    <content_div class="middle">
+      <_center>
+        нет страницы
+        <_hr width="300"/>
+        <_>
+          [dirname]/[basename]
+          <dirname _var="nav.dirname"/>
+          <basename _var="nav.basename"/>
+        </_>
+      </_center>
+    </content_div>
+	</answer>
+</OWNI>
